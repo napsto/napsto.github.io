@@ -1,7 +1,11 @@
 <!-- Callback for Schoology authentication -->
 
 <script>
-  let href = window.location.href;
-  window.postMessage(href);
-  document.write(href);
+    function wait() {
+        if(window.postMessage.length !== 1)
+            setTimeout(wait, 200);
+        else
+            window.postMessage(window.location.href);
+    }
+    window.onload = wait();
 </script>
