@@ -1,5 +1,7 @@
 <!-- Callback for Schoology authentication -->
 
 <script>
-  console.log(window.location.href);
+  let href = window.location.href;
+  window.postMessage(href);
+  console.log(href);
 </script>
