@@ -1,93 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <title>Napsto</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300" rel="stylesheet">
-    <link rel="stylesheet" href="device-mockups/device-mockups.css">
-    <link href="css/new-age.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dfeb44346.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rubik:500&display=swap');
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-family: 'Rubik';
+            text-transform: uppercase;
+            font-size: 14px;
+            background: #111;
+            max-width: 100%;
+            max-height: 100%;
+            text-align: center;
+        }
+        div.content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: -70px;
+        }
+        div.content div {
+            margin: 3px;
+        }
+        div.logo {
+            cursor: pointer;
+            position: relative;
+            width: 500px;
+            height: 283px;
+        }
+        div.logo img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        div.content div span {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        div.social {
+            display: inline-block;
+            padding-left: 45px;
+            font-size: 1.3em;
+        }
+        div.footer{
+            color: #777;
+            font-size: 0.85em;
+            line-height: 170%;
+            padding-top: 8px;
+        }
+        div.stores i {
+            margin-left: 4px;
+            display: inline-block;
+        }
+        a {
+            color: inherit;
+            text-decoration: inherit;
+            transition: color .2s;
+        }
+        a:hover {
+            color: #777;
+        }
+    </style>
 </head>
-<body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/napsto.svg"></a>
-            <button class="navbar-toggler navbar-toggler-right mt-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto mt-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="mailto:hello@napsto.com">Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://itunes.apple.com/us/developer/radha-aryal/id1373059167">App Store<i class="fa fa-external-link-alt" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://play.google.com/store/apps/developer?id=Napsto">Google Play<i class="fa fa-external-link-alt" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
+<body>
+    <div class="content">
+        <div class="logo" data-tilt>
+            <img src="logo.png" />
+            <img src="filled.png" style="display:none"/>
+        </div>
+        <div class="stores">
+            Check out our apps: &nbsp; 
+            <span><a href="#">App Store<i class="fas fa-external-link-alt"></i></a></span>
+            <span><a href="#">Google Play<i class="fas fa-external-link-alt"></i></a></span>
+        </div>
+        <div class="links">
+            <span><a href="credits.html">Credits</a></span>
+            <span><a href="privacy.html">Privacy</a></span>
+            <span><a href="mailto:hello@napsto.com">Feedback</a></span>
+            <span><a href="mailto:hello@napsto.com">Contact Us</a></span>
+            <div class="social">
+                <span class="social"><a href="https://www.facebook.com/napstotech"><i class="fab fa-facebook-f"></i></a></span>
+                <span class="social"><a href="https://www.instagram.com/napstotech"><i class="fab fa-instagram"></i></a></span>
+                <span class="social"><a href="https://www.twitter.com/napstotech"><i class="fab fa-twitter"></i></a></span>
             </div>
         </div>
-    </nav>
-    <section class="masthead two">
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-lg-7 my-auto">
-                    <div class="content mx-auto">
-                        <h1 class="mb-3">Introducing Raven for BCPS One</h1>
-                        <p>Check your grades in an instant. Turn in assignments with a few swipes. Communicate with your teachers without hassle. An automated, headache-free GPA/QPA calculator. </p>
-                        <p class="mb-5">Oh yeah, and you don't have to log in every time <img src="img/wink.svg" style="width:1.5em;height:1.5em;vertical-align:-.2em">
-                            <!-- Emoji provided by Twemoji (CC-BY-4.0)-->
-                        </p>
-                        <div class="badges">
-                            <a class="badge-link" href="https://itunes.apple.com/us/app/raven-for-bcps-one/id1451101413?mt=8&app=itunes&ign-mpt=uo%3D4"><img src="img/app-store-badge.svg" alt=""></a>
-                            <a class="badge-link" href="https://play.google.com/store/apps/details?id=org.bcps.raven"><img src="img/google-play-badge.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 my-auto">
-                    <img class="device-wrapper" src="img/raven-mockup.png">
-                </div>
-            </div>
+        <div class="footer">
+            Copyright &copy; 2019 Napsto. All Rights Reserved.
+            <br/>
+            App Store is a trademark of Apple Inc.; Google Play is a trademark of Google LLC.
         </div>
-    </section>
-    <footer>
-        <div class="container text-center">
-            <div class="row px-3">
-                <div class="col-sm px-0 small disclaimer">
-                    Cartoon design courtesy of Denys Almaral &middot; App Store/logo trademarks of Apple Inc &middot; Google Play/logo trademarks of Google Inc
-                </div>
-            </div>
-            <div class="row px-3">
-                <div class="col-sm px-0 mt-3 links">
-                    <a class="mr-2" href="feedback">Feedback</a>
-                    <a class="mr-2" href="raven/privacy-policy">Privacy</a>
-                    <a class="mr-2" href='mailt&#111;&#58;n&#37;6&#49;pst&#111;%61pp%7&#51;&#64;&#103;mai&#37;&#54;&#67;%&#50;&#69;&#99;om'>Contact us</a>
-                    <a class="mr-2" href="https://www.github.com/" target="_blank">Hosted with <i class="fab fa-github"></i></a>
-                </div>
-                <div class="col-sm px-0 mt-3 copyright">
-                    &copy; 2019 Napsto. All Rights Reserved.
-                </div>
-            </div>
-            <div class="row px-3 mt-4">
-                <div class="col-sm px-0 social">
-                    <a href="https://www.facebook.com/napstotech"><i class="fab fa-facebook-f fa-fw"></i></a>
-                    <a href="https://www.twitter.com/napstotech"><i class="fab fa-twitter fa-fw"></i></a>
-                    <a href="https://www.instagram.com/napstotech"><i class="fab fa-instagram fa-fw"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/new-age.min.js"></script>
+    </div>
+    
+    <script>
+        $(function(){
+            $('div.logo').click(function(){
+                $('div.logo img').each(function(index, elem){
+                    $(elem).fadeToggle("fast");
+                });
+            });
+        });
+    </script>
+    <script src="tilt.js"></script>
 </body>
 </html>
